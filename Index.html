@@ -1,0 +1,466 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SBO Constructora | Sumando Buenas Obras</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Open Sans',sans-serif;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#ffffff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    height:60px;
+}
+
+.logo-text h2{
+    font-family:'Montserrat';
+    color:#3A3A3A;
+}
+
+.logo-text p{
+    color:#5DA9DD;
+    font-weight:600;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:600;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Montserrat';
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    color:#5DA9DD;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#5DA9DD;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:5px;
+    font-weight:600;
+    margin:10px;
+    display:inline-block;
+}
+
+.btn:hover{
+    background:#4798cf;
+}
+
+section{
+    padding:90px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-family:'Montserrat';
+    font-size:2.5rem;
+    color:#3A3A3A;
+}
+
+.section-title p{
+    color:#5DA9DD;
+    font-weight:600;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+.services{
+    background:#f5f5f5;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#5DA9DD;
+    margin-bottom:15px;
+}
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.step{
+    text-align:center;
+    padding:25px;
+}
+
+.number{
+    width:60px;
+    height:60px;
+    background:#5DA9DD;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.contact{
+    background:#3A3A3A;
+    color:white;
+}
+
+.contact-info{
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.menu{
+display:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="navbar">
+
+<div class="logo">
+<img src="img/logo-sbo.png" alt="SBO">
+<div class="logo-text">
+<h2>SBO Constructora</h2>
+<p>Sumando Buenas Obras</p>
+</div>
+</div>
+
+<nav class="menu">
+<a href="#nosotros">Nosotros</a>
+<a href="#servicios">Servicios</a>
+<a href="#proceso">Proceso</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>SBO Constructora</h1>
+
+<h2>Sumando Buenas Obras</h2>
+
+<p>
+Arquitectura, ingeniería y construcción para proyectos
+residenciales e infraestructura en Córdoba.
+</p>
+
+<a href="#contacto" class="btn">Solicitar Presupuesto</a>
+
+</div>
+
+</section>
+
+<section id="nosotros">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Quiénes Somos</h2>
+<p>Compromiso, diseño y calidad constructiva</p>
+</div>
+
+<div class="about">
+
+<div>
+
+<h3>Desarrollo Integral de Proyectos</h3>
+
+<br>
+
+<p>
+SBO Constructora nace de la unión de profesionales comprometidos con la excelencia técnica, la planificación eficiente y la calidad constructiva.
+</p>
+
+<br>
+
+<p>
+Integramos arquitectura, ingeniería y gestión para desarrollar proyectos residenciales, infraestructura y obras civiles que aportan valor a nuestros clientes y a la comunidad.
+</p>
+
+<br>
+
+<p>
+Nuestro lema, <strong>"Sumando Buenas Obras"</strong>, refleja nuestra filosofía de trabajo: cada proyecto es una oportunidad para construir confianza, calidad y relaciones duraderas.
+</p>
+
+<br>
+
+<p>
+Nos especializamos en viviendas premium,
+countries, infraestructura urbana y dirección
+técnica de obras en Córdoba.
+</p>
+<br>
+
+<h3>Socios Fundadores</h3>
+
+<ul>
+    <li>Ing. José María Ovejero Astorga</li>
+    <li>Ing. Danilo Bonpadre</li>
+    <li>Cdr. Gustavo Stefanich</li>
+</ul>
+</div>
+
+<img src="img/proyecto-cuesta-colorada.jpeg"
+     alt="Proyecto Cuesta Colorada">
+
+</div>
+
+</div>
+
+</section>
+
+<section id="servicios" class="services">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Servicios</h2>
+<p>Soluciones integrales</p>
+</div>
+
+<div class="cards">
+
+<div class="card">
+<h3>Arquitectura</h3>
+<p>Diseño y desarrollo de proyectos personalizados.</p>
+</div>
+
+<div class="card">
+<h3>Ingeniería Civil</h3>
+<p>Cálculo estructural e infraestructura.</p>
+</div>
+
+<div class="card">
+<h3>Construcción</h3>
+<p>Ejecución de obras llave en mano.</p>
+</div>
+
+<div class="card">
+<h3>Dirección Técnica</h3>
+<p>Control, seguimiento y calidad de obra.</p>
+</div>
+
+<div class="card">
+<h3>Infraestructura</h3>
+<p>Agua, cloaca, pluviales y redes urbanas.</p>
+</div>
+
+<div class="card">
+<h3>Gestión de Trámites</h3>
+<p>Aprobaciones municipales y documentación técnica.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="proceso">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Nuestro Proceso</h2>
+<p>Transparencia en cada etapa</p>
+</div>
+
+<div class="process">
+
+<div class="step">
+<div class="number">1</div>
+<h3>Reunión</h3>
+<p>Analizamos necesidades y objetivos.</p>
+</div>
+
+<div class="step">
+<div class="number">2</div>
+<h3>Proyecto</h3>
+<p>Diseño arquitectónico y documentación.</p>
+</div>
+
+<div class="step">
+<div class="number">3</div>
+<h3>Presupuesto</h3>
+<p>Planificación de costos y plazos.</p>
+</div>
+
+<div class="step">
+<div class="number">4</div>
+<h3>Construcción</h3>
+<p>Ejecución y control permanente.</p>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<section id="contacto" class="contact">
+
+<div class="container">
+
+<div class="section-title">
+<h2 style="color:white;">Contacto</h2>
+<p>Estamos para ayudarte</p>
+</div>
+
+<div class="contact-info">
+
+<h3>SBO Constructora</h3>
+
+<br>
+
+<p>📍 Concejal Felipe Belardinelli 3565</p>
+<p>Barrio San Fernando - Córdoba Capital</p>
+
+<p>📞 +54 351 7065377</p>
+
+<p>📧 ing.josemariaovejeroastorga@gmail.com</p>
+
+</div>
+
+</div>
+
+</section>
+
+<footer>
+
+<p>
+© 2026 SBO Constructora | Sumando Buenas Obras
+</p>
+
+</footer>
+
+</body>
+</html>
