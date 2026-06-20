@@ -163,7 +163,50 @@ section{
     grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
     gap:25px;
 }
+.galeria{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:25px;
+}
 
+.proyecto{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.proyecto img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.proyecto-info{
+    padding:20px;
+}
+
+.proyecto-info h3{
+    color:#5DA9DD;
+    margin-bottom:10px;
+}
+.proyecto-bloque{
+    margin-bottom: 60px;
+}
+.fotos-proyecto{
+    display:flex;
+    gap:20px;
+    margin:20px 0;
+    flex-wrap:wrap;
+}
+.fotos-proyecto img{
+    flex: 1;
+    min-width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+}
 .card{
     background:white;
     padding:30px;
@@ -252,6 +295,7 @@ display:none;
 <nav class="menu">
 <a href="#nosotros">Nosotros</a>
 <a href="#servicios">Servicios</a>
+<a href="#proyectos">Proyectos</a>
 <a href="#proceso">Proceso</a>
 <a href="#contacto">Contacto</a>
 </nav>
@@ -382,7 +426,53 @@ técnica de obras en Córdoba.
 </div>
 
 </div>
+<section id="proyectos">
 
+<div class="container">
+
+<div class="section-title">
+<h2>Proyectos</h2>
+<p>Maquetas y visualizaciones de nuestros desarrollos</p>
+</div>
+
+<div class="galeria">
+
+<div class="proyecto-bloque">
+    <h3>Country La Cuesta</h3>
+<div class="fotos-proyecto">
+    <img src="img/cuesta1.jpg" alt="Cuesta1">
+    <img src="img/cuesta2.jpg" alt="Cuesta2">
+    <img src="img/cuesta3.jpeg" alt="Cuesta3">
+   </div>
+<h3>Proyecto Residencial</h3>
+<p>Diseño y planificación integral de vivienda premium.</p>
+</div>
+
+<div class="proyecto-bloque">
+    <h3>Desarrollo urbanístico</h3>
+<div class="fotos-proyecto">
+    <img src="img/proyecto1.jpeg" alt="Maqueta1">
+    <img src="img/proyecto2.jpeg" alt="Maqueta2">
+    <img src="img/proyecto3.jpeg" alt="Maqueta3">
+</div>
+<div class="proyecto-info">
+<h3>Desarrollo Urbanístico</h3>
+<p>Infraestructura y urbanización de loteos y countries.</p>
+</div>
+</div>
+
+<div class="proyecto-bloque">
+    <h3>Infraestrctura urbanística</h3>
+<div class="fotos-proyecto">
+    <img src="img/infraestructura1.jpeg" alt="cloaca1">
+    <img src="img/infraestructura2.jpeg" alt="cloaca2">
+    <img src="img/infraestructura3.jpeg" alt="cloaca3">
+</div>
+<div class="proyecto-info">
+<h3>Infraestructura</h3>
+<p>Redes de agua, cloaca y servicios urbanos.</p>
+</div>
+</div>
 </section>
 
 <section id="proceso">
