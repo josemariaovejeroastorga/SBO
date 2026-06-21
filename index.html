@@ -164,8 +164,7 @@ section{
     gap:25px;
 }
 .galeria{
-    display:grid;
-    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    display:block;
     gap:25px;
 }
 
@@ -196,12 +195,12 @@ section{
 .fotos-proyecto{
     display:grid;
     grid-template-columns:repeat(3,1fr);
-    gap:20px;
+    gap:10px;
     margin:20px 0;
 }
 .fotos-proyecto img{
     flex: 1;
-    min-width: 250px;
+    min-width: 100%;
     height: 250px;
     object-fit: cover;
     border-radius: 10px;
