@@ -194,10 +194,10 @@ section{
     margin-bottom: 60px;
 }
 .fotos-proyecto{
-    display:flex;
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
     gap:20px;
     margin:20px 0;
-    flex-wrap:wrap;
 }
 .fotos-proyecto img{
     flex: 1;
@@ -206,6 +206,10 @@ section{
     object-fit: cover;
     border-radius: 10px;
     box-shadow: 0 3px 15px rgba(0,0,0,.08);
+    transition:0.3s;
+}
+.fotos-proyecto img:hover{
+    transform:scale(1.03);
 }
 .card{
     background:white;
@@ -274,6 +278,9 @@ grid-template-columns:1fr;
 display:none;
 }
 
+.fotos-proyecto{
+    grid-template-columns:1fr;
+}
 }
 
 </style>
@@ -425,7 +432,7 @@ técnica de obras en Córdoba.
 
 </div>
 
-</div>
+</section>
 <section id="proyectos">
 
 <div class="container">
@@ -462,7 +469,7 @@ técnica de obras en Córdoba.
 </div>
 
 <div class="proyecto-bloque">
-    <h3>Infraestrctura urbanística</h3>
+    <h3>Infraestructura urbanística</h3>
 <div class="fotos-proyecto">
     <img src="img/infraestructura1.jpeg" alt="cloaca1">
     <img src="img/infraestructura2.jpeg" alt="cloaca2">
@@ -534,10 +541,10 @@ técnica de obras en Córdoba.
 <p>📍 Concejal Felipe Belardinelli 3565</p>
 <p>Barrio San Fernando - Córdoba Capital - República Argentina</p>
 
-<p>📞 +54 351 7065377</p>
-<p> 📞 +34 626 639697</p>
+<p>📞 <a href="+54 351 7065377"> +54 351 7065377</a></p>
+<p> 📞 <a href="+34 626 639697"> +34 626 639697</a></p>
 
-<p>📧 ing.josemariaovejeroastorga@gmail.com</p>
+<p>📧 <a href="ing.josemariaovejeroastorga@gmail.com"> ing.josemariaovejeroastorga@gmail.com </a></p>
 
 </div>
 
