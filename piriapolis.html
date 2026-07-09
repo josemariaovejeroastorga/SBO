@@ -1,4 +1,330 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+<title>SBO Constructora | Sumando Buenas Obras</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Open+Sans:wght@300;400;600&display=swap" rel="stylesheet">
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Open Sans',sans-serif;
+    color:#333;
+    line-height:1.6;
+}
+
+header{
+    background:#ffffff;
+    box-shadow:0 2px 10px rgba(0,0,0,.08);
+    position:fixed;
+    width:100%;
+    top:0;
+    z-index:1000;
+}
+
+.navbar{
+    max-width:1200px;
+    margin:auto;
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+    padding:15px 20px;
+}
+
+.logo{
+    display:flex;
+    align-items:center;
+    gap:15px;
+}
+
+.logo img{
+    height:60px;
+}
+
+.logo-text h2{
+    font-family:'Montserrat';
+    color:#3A3A3A;
+}
+
+.logo-text p{
+    color:#5DA9DD;
+    font-weight:600;
+}
+
+.menu a{
+    text-decoration:none;
+    color:#333;
+    margin-left:25px;
+    font-weight:600;
+}
+
+.hero{
+    height:100vh;
+    background:
+    linear-gradient(rgba(0,0,0,.55),rgba(0,0,0,.55)),
+    url('https://images.unsplash.com/photo-1511818966892-d7d671e672a2?auto=format&fit=crop&w=1600&q=80');
+    background-size:cover;
+    background-position:center;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    text-align:center;
+    color:white;
+}
+
+.hero-content{
+    max-width:900px;
+    padding:20px;
+}
+
+.hero h1{
+    font-family:'Montserrat';
+    font-size:4rem;
+    margin-bottom:15px;
+}
+
+.hero h2{
+    color:#5DA9DD;
+    margin-bottom:20px;
+}
+
+.hero p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.btn{
+    background:#5DA9DD;
+    color:white;
+    text-decoration:none;
+    padding:15px 30px;
+    border-radius:5px;
+    font-weight:600;
+    margin:10px;
+    display:inline-block;
+}
+
+.btn:hover{
+    background:#4798cf;
+}
+
+section{
+    padding:90px 20px;
+}
+
+.container{
+    max-width:1200px;
+    margin:auto;
+}
+
+.section-title{
+    text-align:center;
+    margin-bottom:50px;
+}
+
+.section-title h2{
+    font-family:'Montserrat';
+    font-size:2.5rem;
+    color:#3A3A3A;
+}
+
+.section-title p{
+    color:#5DA9DD;
+    font-weight:600;
+}
+
+.about{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+    gap:50px;
+    align-items:center;
+}
+
+.about img{
+    width:100%;
+    border-radius:10px;
+}
+
+.services{
+    background:#f5f5f5;
+}
+
+.cards{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(250px,1fr));
+    gap:25px;
+}
+.galeria{
+    display:block;
+    gap:25px;
+}
+
+.proyecto{
+    background:white;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.proyecto img{
+    width:100%;
+    height:250px;
+    object-fit:cover;
+}
+
+.proyecto-info{
+    padding:20px;
+}
+
+.proyecto-info h3{
+    color:#5DA9DD;
+    margin-bottom:10px;
+}
+.proyecto-bloque{
+    margin-bottom: 60px;
+}
+.fotos-proyecto{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:10px;
+    margin:20px 0;
+}
+.fotos-proyecto img{
+    flex: 1;
+    min-width: 100%;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 10px;
+    box-shadow: 0 3px 15px rgba(0,0,0,.08);
+    transition:0.3s;
+}
+.fotos-proyecto img:hover{
+    transform:scale(1.37);
+}
+.card{
+    background:white;
+    padding:30px;
+    border-radius:10px;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+}
+
+.card h3{
+    color:#5DA9DD;
+    margin-bottom:15px;
+}
+
+.process{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(220px,1fr));
+    gap:20px;
+}
+
+.step{
+    text-align:center;
+    padding:25px;
+}
+
+.number{
+    width:60px;
+    height:60px;
+    background:#5DA9DD;
+    color:white;
+    border-radius:50%;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    margin:auto;
+    font-size:1.5rem;
+    font-weight:bold;
+}
+
+.contact{
+    background:#3A3A3A;
+    color:white;
+}
+
+.contact-info{
+    text-align:center;
+}
+
+footer{
+    background:#222;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:2.5rem;
+}
+
+.about{
+grid-template-columns:1fr;
+}
+
+.menu{
+display:none;
+}
+
+.fotos-proyecto{
+    grid-template-columns:1fr;
+}
+}
+
+</style>
+</head>
+
+<body>
+
+<header>
+<div class="navbar">
+
+<div class="logo">
+<img src="img/logo-sbo.png" alt="SBO">
+<div class="logo-text">
+<h2>SBO Constructora</h2>
+<p>Sumando Buenas Obras</p>
+</div>
+</div>
+
+<nav class="menu">
+<a href="#nosotros">Nosotros</a>
+<a href="#servicios">Servicios</a>
+<a href="#proyectos">Proyectos</a>
+<a href="#proceso">Proceso</a>
+<a href="#contacto">Contacto</a>
+</nav>
+
+</div>
+</header>
+
+<section class="hero">
+
+<div class="hero-content">
+
+<h1>SBO Constructora</h1>
+
+<h2>Sumando Buenas Obras</h2>
+
+<p>
+Arquitectura, ingeniería y construcción para proyectos
+residenciales e infraestructura en Córdoba Argentina y en Zaragoza España.
+</p>
+
+<a href="#contacto" class="btn">Solicitar Presupuesto</a>
+
+</div>
 <h3>Proyecto Piriápolis</h3>
 <div class="fotos-proyecto">
     <div class="fotos-proyecto">
