@@ -65,8 +65,59 @@ header{
     color:#333;
     margin-left:25px;
     font-weight:600;
+    transition:color .3s;
 }
 
+.menu a:hover{
+    color:#5DA9DD;
+}
+.menu{
+    display:felx;
+    align-items:center;
+}
+
+.dropdown{
+    position:relative;
+    margin-left:25px;
+}
+.dropdown > a{
+    margin-left:0;
+}
+.dropdown-menu{
+    position:absolute;
+    top:100%;
+    left:0;
+    background:#ffffff;
+    min-width:220px;
+    box-shadow:0 8px 20px rgba(0,0,0,.12);
+    border-radius:6px;
+    padding:8px 0;
+    opacity:0;
+    visibility:hidden;
+    transform:translateY(10px);
+    transition:opacity .25s ease, transform .25s ease, visibility .25s;
+    z-index:1001;
+}
+
+.dropdown:hover .dropdown-menu{
+    opacity:1;
+    visibility:visible;
+    transform:translateY(0);
+}
+
+.dropdown-menu a{
+    display:block;
+    margin-left:0;
+    padding:10px 18px;
+    color:#333;
+    font-weight:400;
+    white-space:nowrap;
+}
+
+.dropdown-menu a:hover{
+    background:#f5f5f5;
+    color:#5DA9DD;
+}
 .hero{
     height:100vh;
     background:
@@ -301,7 +352,12 @@ display:none;
 <nav class="menu">
 <a href="#nosotros">Nosotros</a>
 <a href="#servicios">Servicios</a>
+<div class="dropdown">
 <a href="#proyectos">Proyectos</a>
+<div class="dropdown-menu">
+<a href="piriapolis.html">Proyecto Piriápolis</a>
+</div>
+</div>
 <a href="#proceso">Proceso</a>
 <a href="#contacto">Contacto</a>
 </nav>
