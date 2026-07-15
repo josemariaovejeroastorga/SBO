@@ -634,7 +634,7 @@ aislación acústica y térmica proporcionada por la utilización de mampuestos
 <script>
 // Podés cambiar el % de anticipo acá:
 const PORCENTAJE_ANTICIPO = 0.20;
-const TASA_MENSUAL = 0.037;
+const TASA_MENSUAL = 0.01;
 
 function formatoMoneda(numero){
     return "USD " + Math.round(numero).toLocaleString("es-AR");
@@ -646,7 +646,7 @@ function calcularCuota(){
 
     const anticipo = precio * PORCENTAJE_ANTICIPO;
     const saldo = precio - anticipo;
-    const cuotaMensual = (saldo * (1 + TASA_MENSUAL) ^cuotas) / cuotas;
+    const cuotaMensual = (saldo * (1 + TASA_MENSUAL * cuotas) / cuotas;
 
     document.getElementById("cuotasLabel").textContent = cuotas;
     document.getElementById("resPrecio").textContent = formatoMoneda(precio);
