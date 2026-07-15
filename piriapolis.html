@@ -646,7 +646,7 @@ function calcularCuota(){
 
     const anticipo = precio * PORCENTAJE_ANTICIPO;
     const saldo = precio - anticipo;
-    const cuotaMensual = (saldo * (1 + TASA_MENSUAL * cuotas) / cuotas;
+    const cuotaMensual = saldo * (1 + TASA_MENSUAL * cuotas) / cuotas;
 
     document.getElementById("cuotasLabel").textContent = cuotas;
     document.getElementById("resPrecio").textContent = formatoMoneda(precio);
