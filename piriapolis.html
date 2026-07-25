@@ -16,10 +16,15 @@
     box-sizing:border-box;
 }
 
+html{
+    overflow-x:hidden;
+}
+
 body{
     font-family:'Open Sans',sans-serif;
     color:#333;
     line-height:1.6;
+    overflow-x:hidden;
 }
 
 header{
@@ -119,6 +124,14 @@ header{
 .piriapolis-content{
     max-width:900px;
     padding:20px;
+    min-width:0;
+    width:100%;
+}
+    
+.piriapolis h1,
+.piriapolis h2{
+    overflow-wrap:break-word;
+    word-break;break-word;
 }
 
 .piriapolis h1{
@@ -374,6 +387,18 @@ footer{
 font-size:2.5rem;
 }
 
+.piriapolis h1{
+    font-size:rem;
+}
+
+.piriapolis{
+margin:10px;
+}
+
+.piriapolis-content{
+padding:10px;
+}
+
 .about{
 grid-template-columns:1fr;
 }
@@ -421,25 +446,29 @@ display:none;
 <h1>SBO Constructora</h1>
 
 <h2>Sumando Buenas Obras</h2>
+
+</div>
+
 </section>
 
 <section id="descripcion">
 
-<div class="piriapolis h1">
+<div class="piriapolis">
+
+<div class="piriapolis-content">
 
 <h1>Nuevo proyecto de departamentos en zona sur de la ciudad de Córdoba</h1>
-    
-</div>
-<div class="piriapolis h2">
-    <h2>A METROS DE LA AVENIDA VELEZ SARSFIELD</h2>
-</div>
 
-<div class="piriapolis p">
-
+<h2>A METROS DE LA AVENIDA VELEZ SARSFIELD</h2>
 
 <h2>DEPARTAMENTOS DE 1 Y 2 DORMITORIOS</h2>
 
 </div>
+
+</div>
+
+<div class="container">
+
 <div class="card">
 
 <br>
@@ -470,23 +499,21 @@ de la primera vivienda.
 </p>
 <br>
 </div>
-</section>
 
 <a href="#contacto" class="btn">Solicitar Presupuesto</a>
 
-</div>
 <h2>Proyecto Piriápolis</h2>
-<div class="fotos-proyecto">
+
     <div class="fotos-proyecto">
     <img src="img/piriapolis1.jpeg" alt="Piriapolis1">
-    </div>
-    <div class="fotos-proyecto">
     <img src="img/piriapolis2.jpeg" alt="Piriapolis2">
-    </div>
-    <div class="fotos-proyecto">
     <img src="img/piriapolis3.jpeg" alt="Piriapolis3">
     </div>
+
 </div>
+
+</section>
+
 <section id="tipologias">
 
 <div class="container">
@@ -678,10 +705,10 @@ calcularCuota();
 <p>📍 Concejal Felipe Belardinelli 3565</p>
 <p>Barrio San Fernando - Córdoba Capital - República Argentina</p>
 
-<p>📞 <a href="+54 351 7065377"> +54 351 7065377</a></p>
-<p> 📞 <a href="+34 626 639697"> +34 626 639697</a></p>
+<p>📞 <a href="tel:+543517065377"> +54 351 7065377</a></p>
+<p> 📞 <a href="tel:+34626639697"> +34 626 639697</a></p>
 
-<p>📧 <a href="ing.josemariaovejeroastorga@gmail.com"> ing.josemariaovejeroastorga@gmail.com </a></p>
+<p>📧 <a href="msilto:ing.josemariaovejeroastorga@gmail.com"> ing.josemariaovejeroastorga@gmail.com </a></p>
 
 </div>
 
