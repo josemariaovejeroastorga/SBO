@@ -364,7 +364,29 @@ section{
     padding-top:12px;
     margin-top:12px;
 }
+    
+.ubicacion-box{
+    max-width:900px;
+    margin:auto;
+    text-align:center;
+}
 
+.mapa-container{
+    width:100%;
+    height:450px;
+    border-radius:10px;
+    overflow:hidden;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+    margin-top:20px;
+}
+
+.mapa-container iframe{
+    width:100%;
+    height:100%;
+    border:0;
+    display:block;
+}
+    
 .contact{
     background:#3A3A3A;
     color:white;
@@ -409,6 +431,10 @@ display:none;
 
 .fotos-proyecto{
     grid-template-columns:1fr;
+}
+
+.mapa-container{
+    height:300px;
 }
 }
 
@@ -567,6 +593,37 @@ aislación acústica y térmica proporcionada por la utilización de mampuestos
 
 <img src="img/piriapolis_pb.jpg"
      alt="Planta general Piriapolis">
+
+</div>
+
+</div>
+
+<section id="ubicacion">
+
+<div class="container">
+
+<div class="section-title">
+<h2>Ubicación del Proyecto</h2>
+<p>Pizarro 472 esquina Piriápolis, Barrio Ciudadela, Córdoba</p>
+</div>
+
+<div class="ubicacion-box">
+
+<div class="mapa-container">
+<iframe
+    src="https://maps.google.com/maps?q=-31.446349,-64.202180&z=17&ie=UTF8&iwloc=&output=embed"
+    allowfullscreen=""
+    loading="lazy"
+    referrerpolicy="no-referrer-when-downgrade">
+</iframe>
+</div>
+
+<a href="https://www.google.com/maps/search/?api=1&query=-31.446349,-64.202180"
+   target="_blank"
+   rel="noopener"
+   class="btn">
+   Ver en Google Maps
+</a>
 
 </div>
 
