@@ -249,22 +249,43 @@ section{
 }
 .fotos-proyecto{
     display:grid;
-    grid-template-columns:repeat(3,1fr);
-    gap:10px;
+    grid-template-columns:repeat(auto-fit, minmax(min(100%, 240px), 1fr));
+    gap:12px;
     margin:20px 0;
 }
+
 .fotos-proyecto img{
-    flex: 1;
-    min-width: 100%;
-    height: 250px;
-    object-fit: cover;
-    border-radius: 10px;
-    box-shadow: 0 3px 15px rgba(0,0,0,.08);
-    transition:0.3s;
+    display:block;
+    width:100%;
+    aspect-ratio:4 / 3;
+    object-fit:cover;
+    border-radius:10px;
+    box-shadow:0 3px 15px rgba(0,0,0,.08);
+    transition:transform .3s ease, box-shadow .3s ease;
 }
+
 .fotos-proyecto img:hover{
-    transform:scale(1.37);
+    transform:scale(1.05);
+    position:relative;
+    z-index:2;
+    box-shadow:0 8px 25px rgba(0,0,0,.2);
 }
+
+.video-wrap{
+    position:relative;
+    aspect-ratio:16 / 9;
+    max-width:900px;
+    margin:20px auto;
+}
+.video-wrap iframe{
+    position:absolute;
+    inset:0;
+    width:100%;
+    height:100%;
+    border:0;
+    border-radius:10px;
+}
+
 .card{
     background:white;
     padding:30px;
@@ -484,6 +505,11 @@ técnica de obras en Córdoba.
 </div>
 
 <div class="card">
+<h3>Mantenimiento de edificios</h3>
+<p>Especial atención de los procesos preventivos</p>
+</div>
+
+<div class="card">
 <h3>Infraestructura</h3>
 <p>Agua, cloaca, pluviales y redes urbanas.</p>
 </div>
@@ -528,6 +554,25 @@ técnica de obras en Córdoba.
 </div>
 <h3>Proyecto Residencial</h3>
 <p>Diseño y planificación integral de vivienda premium.</p>
+<div class="video-wrap">
+  <iframe width="337" height="599" src="https://www.youtube.com/embed/XF3bwwkiZWw"
+  title="Video Piriapolis horiz #architecture" frameborder="0" allow="accelerometer;
+  autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen; alt="Tu navegador no soporta la reproducción del video"></iframe>"
+</div>
+ <div class="fotos-proyecto">
+    <img src="img/Piriapolis1.jpg" alt="Cuesta1">
+    </div>
+    <div class="fotos-proyecto">
+    <img src="img/Piriapolis2_1.jpg." alt="Cuesta2">
+    </div>
+    <div class="fotos-proyecto">
+    <img src="img/Piriapolis2_2.jpg" alt="Cuesta3">
+    </div>
+    <div class="fotos-proyecto">
+    <img src="img/Piriapolis2_3.jpg" alt="Cuesta3">
+    </div>
+</div>
 </div>
 
 <div class="proyecto-bloque">
@@ -565,6 +610,27 @@ técnica de obras en Córdoba.
 <div class="proyecto-info">
 <h3>Infraestructura</h3>
 <p>Redes de agua, cloaca y servicios urbanos.</p>
+</div>
+
+<div class="proyecto-bloque">
+    <h3>Mantenimiento de edificios</h3>
+<div class="fotos-proyecto">
+    <div class="fotos-proyecto">
+    <img src="img/Montante AF.jpeg" alt="Montante">
+    </div>
+    <div class="fotos-proyecto">
+    <img src="img/Keter 8.jpeg" alt="obstrucción cañería cloacal">
+    </div>
+    <div class="fotos-proyecto">
+    <img src="img/Keter 29.jpeg" alt="deterioro cañería galvanizada">
+    </div>
+    <div class="fotos-proyecto">
+    <img src="img/IMG_6684.jpg" alt="Colector de tanque 4">
+    </div>
+</div>
+<div class="proyecto-info">
+<h3>El mantenimiento de edificios</h3>
+<p>Procesos preventivos y correctivos.</p>
 </div>
 
 <div class="proyecto-info">
